@@ -1,8 +1,8 @@
 
 скрины 
-#https://disk.yandex.ru/d/JQZAcFMh13XNJg
+https://disk.yandex.ru/d/JQZAcFMh13XNJg
 
-!инструкция 
+инструкция 
 
 1. Установить Зависимости  (управление пакетами nuget) Screenshot_1
  
