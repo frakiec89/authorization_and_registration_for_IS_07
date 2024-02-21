@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp3.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="AddUserWindow" Height="450" Width="800">
+    <Grid>
+        <!-- // track-->
+        <StackPanel>
+            <TextBox x:Name="tb_name" Margin="5"></TextBox>
+            <Label Margin="5,1,5,5">Введите имя</Label>
+
+            <TextBox x:Name="tb_email" Margin="5"></TextBox>
+            <Label Margin="5,1,5,5">Введите емеил</Label>
+
+
+            <TextBox x:Name="tb_password" Margin="5"></TextBox>
+            <Label Margin="5,1,5,5">Введите пароль</Label>
+
+            <Button x:Name="btAddus" Margin="5"
+                    Click="btAddus_Click"
+                    >Добавить  в бд</Button>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
