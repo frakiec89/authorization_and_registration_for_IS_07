@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Diagnostics.SymbolStore;
 using System.Windows;
 // track
 
@@ -13,20 +14,23 @@ namespace WpfApp3
         public AddUserWindow()
         {
             InitializeComponent();
+
+
         }
 
         private void btAddus_Click(object sender, RoutedEventArgs e)
         {
 
             /// валидация 
-            if (tb_name.Text == "")
+            if ( string.IsNullOrWhiteSpace(tb_name.Text))
+
             {
                 MessageBox.Show("Пустое  имя ");
                 return;
             }
 
             /// валидация 
-            if (tb_email.Text == "")
+            if (string.IsNullOrWhiteSpace(tb_email.Text))
             {
                 MessageBox.Show("Пустой емеил ");
                 return;
@@ -34,7 +38,7 @@ namespace WpfApp3
 
 
             /// валидация 
-            if (tb_password.Text == "")
+            if (string.IsNullOrWhiteSpace(tb_password.Text))
             {
                 MessageBox.Show("Пустое  пароль ");
                 return;
